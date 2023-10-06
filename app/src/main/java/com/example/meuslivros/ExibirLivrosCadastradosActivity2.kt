@@ -38,7 +38,7 @@ class ExibirLivrosCadastradosActivity2 : AppCompatActivity() {
                 binding.textNota.text = db.LivrosDao().getAll().get(i + 1).nota
                 i++;
             } else {
-                Toast.makeText(this, "Limite da lsita de livros alcançado.", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Fim da lista!", Toast.LENGTH_SHORT)
                     .show()
 
             }
@@ -51,7 +51,7 @@ class ExibirLivrosCadastradosActivity2 : AppCompatActivity() {
                 binding.textNota.text=db.LivrosDao().getAll().get(i-1).nota
                 i--;
             }else{
-                Toast.makeText(this, "Inicio da lista alcançado.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Inicio da lista!", Toast.LENGTH_SHORT).show()
 
             }
         }
